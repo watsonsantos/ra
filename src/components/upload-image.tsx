@@ -26,7 +26,7 @@ export function ImageUpload() {
 
         // Gera um identificador único para criar a URL do QR Code
         const uniqueId = Date.now().toString(); // Pode ser substituído por UUID
-        const arSceneUrl = `192.168.10.125:3000/ar-scene?id=${uniqueId}`;
+        const arSceneUrl = `${window.location.origin}/ar-scene?id=${uniqueId}`;
         setQrCodeUrl(arSceneUrl);
 
         // Simule ou implemente o armazenamento do `dataUrl` associado ao `uniqueId`
